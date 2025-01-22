@@ -13,4 +13,10 @@ public class CharacterFrequencyCounterTest {
         //Assert check if equals
         assertEquals(3, actualCount);
     }
+    @Test
+    public void testIfJAppearsfourTimeInUsername() {
+        CharacterFrequencyCounter counter  = new CharacterFrequencyCounter("__rjjjj__");
+        int actualCount = counter.getFrequency('j');
+        assertEquals(4, actualCount);
+    }
 }
